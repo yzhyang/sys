@@ -1,0 +1,16 @@
+Host lxplus*.cern.ch
+     GSSAPIAuthentication yes
+     GSSAPIDelegateCredentials yes
+     #GSSAPITrustDns yes
+     Protocol 2
+     ForwardX11 no
+     ServerAliveInterval 120	
+
+Host lxslc*.ihep.ac.cn
+     GSSAPIAuthentication yes
+     GSSAPIDelegateCredentials yes
+     #GSSAPITrustDns yes
+     Protocol 2
+     ForwardX11 no
+     ServerAliveInterval 120
+     RemoteForward 52600 127.0.0.1:52698 
